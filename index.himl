@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CalorieScan</title>
+    <style>
+        :root {
+            --primary-color: #10b981;
+            --primary-dark: #059669;
+            --text-color: #1f2937;
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 32px;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+        h1 {
+            color: var(--primary-dark);
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+        .app-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #4b5563;
+            margin-bottom: 24px;
+        }
+        .effective-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        h2 {
+            color: #111827;
+            font-size: 1.4rem;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 12px;
+        }
+        p, li {
+            font-size: 1rem;
+            color: #374151;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background-color: #ecfdf5;
+            border: 1px solid #a7f3d0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+        .contact-box {
+            background-color: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 24px;
+        }
+        a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="app-name">Application: <strong>CalorieScan - Smart Calorie & Nutrition Tracker</strong></div>
+    <div class="effective-date">Last Updated: October 4, 2026</div>
+
+    <p>
+        Thank you for choosing <strong>CalorieScan</strong> ("we", "our", or "the App"). We are committed to protecting your personal privacy and safeguarding your personal information. This Privacy Policy explains how our application collects, uses, stores, and protects your information in compliance with Google Play Developer Policies and global data privacy standards.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We collect only the information strictly necessary to provide and improve our nutrition tracking and fitness analysis features:</p>
+    <ul>
+        <li><strong>Account Information:</strong> When you register or sign in with Firebase Authentication, we collect your email address and an encrypted authentication identifier (User ID / UID) to securely manage your account.</li>
+        <li><strong>Health & Fitness Data:</strong> To calculate your Basal Metabolic Rate (BMR), Total Daily Energy Expenditure (TDEE), and daily caloric and macronutrient targets, you may voluntarily input your age, gender, height, current body weight, target weight, activity level, and weight goals.</li>
+        <li><strong>Nutrition & Meal Logs:</strong> When you record meals, we store food names, calorie estimates, portion sizes, macronutrients (protein, carbohydrates, fats, fiber), timestamps, and optional user notes.</li>
+        <li><strong>Food Images:</strong> When you capture or upload photos of food items to use the AI nutritional estimation feature, images are processed to detect food components and nutritional values. Photos saved with your meal logs are stored locally on your device storage.</li>
+    </ul>
+
+    <h2>2. Permissions and Hardware Access</h2>
+    <p>The App requests the following permissions only when required to perform user-initiated features:</p>
+    <ul>
+        <li><strong>Camera (<code>android.permission.CAMERA</code>):</strong> Used solely to allow you to take real-time photos of food plates for AI nutrition estimation and to scan barcode labels on packaged food items. Camera streams are processed locally in real-time and are never secretly recorded or streamed.</li>
+        <li><strong>Audio (<code>android.permission.RECORD_AUDIO</code>):</strong> Used exclusively if you activate voice commands or the interactive voice coach. Audio streams are not retained, recorded, or shared with third parties.</li>
+        <li><strong>Internet (<code>android.permission.INTERNET</code>):</strong> Used to communicate with Google Firebase services (Authentication and Cloud Firestore sync) and Google AI nutritional analysis APIs.</li>
+    </ul>
+
+    <h2>3. Third-Party Services and SDKs</h2>
+    <p>We work with trusted industry-standard service providers that adhere to rigorous security and privacy standards:</p>
+    <ul>
+        <li><strong>Google Firebase (Firebase Authentication, Cloud Firestore):</strong> Used for secure user identity management and encrypted cloud synchronization of your personal meals and profile. Please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+        <li><strong>Google ML Kit:</strong> Used for on-device barcode detection and parsing without transmitting barcode images to remote servers.</li>
+        <li><strong>Google Generative AI / Gemini API:</strong> Used to estimate calories, macros, and nutritional composition from user-submitted food photos or text prompts.</li>
+    </ul>
+
+    <h2>4. How We Use Your Information</h2>
+    <p>We use the collected information exclusively to:</p>
+    <ul>
+        <li>Calculate scientific daily caloric and macro targets according to Mifflin-St Jeor formulas.</li>
+        <li>Identify foods and calculate nutritional estimates via AI and barcode scanning.</li>
+        <li>Sync your meals and fitness progress to Firebase so you do not lose your logs.</li>
+        <li>Provide personalized voice coach feedback and historical progress insights.</li>
+    </ul>
+    <div class="highlight-box">
+        <strong>We DO NOT sell, rent, monetize, or disclose your personal data, health statistics, or food photos to third-party data brokers or advertisers.</strong>
+    </div>
+
+    <h2>5. Data Storage, Security, and Retention</h2>
+    <p>
+        Your data is saved locally on your device via an encrypted SQLite Room database and synced securely over encrypted SSL/TLS connections to Google Firebase Firestore. We implement appropriate technical and organizational security measures to protect against unauthorized access, alteration, or disclosure.
+    </p>
+
+    <h2>6. Data Deletion and User Rights</h2>
+    <p>You have complete control over your data:</p>
+    <ul>
+        <li><strong>Individual Entry Deletion:</strong> You can delete any individual meal entry directly from the Home or History screens at any time.</li>
+        <li><strong>Account & Data Deletion:</strong> In accordance with Google Play data safety requirements, you have the right to request permanent deletion of your account and all associated Firebase Firestore data. To request full account and data deletion, please contact us at <a href="mailto:krishnavarma1020@gmail.com">krishnavarma1020@gmail.com</a> with the subject "Delete CalorieScan Account". We will process and wipe your data within 7 business days.</li>
+    </ul>
+
+    <h2>7. Children's Privacy</h2>
+    <p>
+        CalorieScan is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided us with personal information, we will delete it immediately from our servers.
+    </p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>
+        We may update this Privacy Policy from time to time. We will notify users of any material changes by updating the "Last Updated" date at the top of this document. We encourage you to review this policy periodically.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <div class="contact-box">
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact the developer:</p>
+        <p>
+            <strong>Developer Contact:</strong> Krishna Varma<br>
+            <strong>Email:</strong> <a href="mailto:krishnavarma1020@gmail.com">krishnavarma1020@gmail.com</a><br>
+            <strong>Application:</strong> CalorieScan (Package ID: <code>com.aistudio.caloriescan.vkmzqp</code>)
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2026 CalorieScan. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
